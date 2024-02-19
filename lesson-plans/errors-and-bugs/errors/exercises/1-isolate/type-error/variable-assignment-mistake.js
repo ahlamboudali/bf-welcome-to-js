@@ -1,9 +1,6 @@
-
-
 'use strict';
 
 console.log('--- in execution phase ---');
-
 
 /*
   environment:
@@ -21,7 +18,5 @@ console.log('--- in execution phase ---');
 */
 
 let isHappy = false;
-
-true = isHappy;
-
-
+isHappy = true;
+console.log(isHappy);
