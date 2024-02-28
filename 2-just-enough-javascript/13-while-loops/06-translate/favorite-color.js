@@ -36,3 +36,26 @@
 /* ---   ?   --- */
 
 // alert(message)
+
+let message = 'your favorite color is ';
+
+while (true) {
+  const input = prompt('what is your favorite color? ');
+
+  if (input === null) {
+    alert('there is no escape');
+    continue;
+  } else {
+    const isFavoriteColor = confirm(`is this correct? "${input}"`);
+
+    if (isFavoriteColor) {
+      message += input;
+      break;
+    } else {
+      alert('no, then enter your favorite color.');
+      continue;
+    }
+  }
+}
+
+alert(message);

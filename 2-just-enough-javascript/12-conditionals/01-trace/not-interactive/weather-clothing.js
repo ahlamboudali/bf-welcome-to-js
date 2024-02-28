@@ -28,6 +28,6 @@ if (weather === 'spring') {
   clothingChoice = 'Invalid weather type.';
 }
 
-console.log(clothingChoice);
+console.log(clothingChoice); // Output: Put on rain boots.
 
 // Taken from: https://www.codecademy.com/courses/introduction-to-javascript/quizzes/learn-javascript-control-flow-control-flow-quiz

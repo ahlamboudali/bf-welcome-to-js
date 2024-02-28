@@ -31,3 +31,20 @@
 /* ---  ?  --- */
 
 // alert(message)
+let input = null;
+
+while (input === null) {
+  input = prompt('enter something, the program will check if it has an "x"');
+}
+
+let message = '';
+// check if the input case insensitive has 'x'
+const doesIncludesX = input.toLowerCase().includes('x');
+
+if (doesIncludesX) {
+  message += 'has at least one "x"';
+} else {
+  message += 'does not have a single "x"';
+}
+
+alert(message);
