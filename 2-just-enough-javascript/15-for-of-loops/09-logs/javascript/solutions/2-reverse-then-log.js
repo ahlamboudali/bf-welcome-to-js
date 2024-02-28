@@ -1,9 +1,13 @@
 'use strict';
 
-let backwards = 'tpircsavaj';
+let language = ' j a v a s c r i p t';
 
-// use a for-of loop to reverse `backwards`
-//  assign the reversed string to `language`
-let language = '';
+let logIt = '';
 
-// log each character in `language`
+for (let char of language) {
+  if (char === ' ') {
+    continue;
+  }
+  logIt += char;
+  console.log(char);
+}
