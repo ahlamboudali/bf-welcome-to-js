@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -19,6 +17,9 @@ while (!userConfirmedPhrase) {
   }
 
   userConfirmedPhrase = confirm('is this correct: "' + phrase + '"');
+
+  // log the user phrase
+  console.log(phrase);
 }
 
 const caseSensitive = confirm('do you want a case-sensitive search?');
@@ -35,15 +36,24 @@ while (!userConfirmedQuery) {
   }
 
   userConfirmedQuery = confirm('is this correct: "' + query + '"');
+
+  // log query
+  console.log(query);
 }
 
 let phraseIncludesQuery;
 if (caseSensitive) {
   phraseIncludesQuery = phrase.includes(query);
+
+  // log search type
+  console.log('case sensitive');
 } else {
   const lowerCasePhrase = phrase.toLowerCase();
   const lowerCaseQuery = query.toLowerCase();
   phraseIncludesQuery = lowerCasePhrase.includes(lowerCaseQuery);
+
+  // log search type
+  console.log('case insensitive');
 }
 
 let doesOrNot = '';
@@ -53,6 +63,8 @@ if (phraseIncludesQuery) {
   doesOrNot = 'does not';
 }
 
+// log query found or not
+console.log('Query ' + doesOrNot + ' found');
 alert(
   '"' +
     phrase +
