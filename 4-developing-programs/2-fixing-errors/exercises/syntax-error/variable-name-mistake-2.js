@@ -17,4 +17,4 @@
   the fix(es):
 */
 
-const undefined = 'three';
+const myVariable = 'three';

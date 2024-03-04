@@ -16,9 +16,7 @@
 
   the fix(es):
 */
-
-if (let i = 0; i < 5; i++) {
+let i;
+for (i = 0; i < 5; i++) {
   console.log(i);
 }
-
-

@@ -35,8 +35,11 @@ let message = 'you entered "';
 while (true) {
   const input = prompt('enter something');
 
-  if (input === null && input.length === 0) {
-    message = input + '"';
+  if (input === null) {
+    message = 'You canceled the prompt.';
+    break;
+  } else if (input.length === 0) {
+    message = 'You entered ""';
     break;
   }
 }
