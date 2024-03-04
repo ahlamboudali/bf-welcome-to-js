@@ -10,24 +10,26 @@ let toBeFrogged = null;
 
 while (toBeFrogged === null) {
   toBeFrogged = prompt(
-    'enter some text to frogify.\n' +
+    'Enter some text to frogify.\n' +
       '- "f" will be replaced with "frog"\n' +
       '- "F" will be replaced with "FROG"',
   );
-}
 
-let frogged = '';
+  let frogged = '';
+  let index = 0;
 
-for (const character of toBeFrogged) {
-  if (character === 'f') {
-    frogged = frogged + 'frog';
-    continue;
+  while (index < toBeFrogged.length) {
+    const character = toBeFrogged[index];
+    if (character === 'f') {
+      frogged = frogged + 'frog';
+    } else if (character === 'F') {
+      frogged = frogged + 'FROG';
+    } else {
+      frogged = frogged + character;
+    }
+    index++;
   }
-  if (character === 'F') {
-    frogged = frogged + 'FROG';
-    continue;
-  }
-  frogged = frogged + character;
-}
 
+  alert(frogged);
+}
 alert(frogged);

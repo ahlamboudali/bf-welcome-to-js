@@ -21,13 +21,10 @@ let frogged = '';
 for (const character of toBeFrogged) {
   if (character === 'f') {
     frogged = frogged + 'frog';
-    continue;
-  }
-  if (character === 'F') {
+  } else if (character === 'F') {
     frogged = frogged + 'FROG';
-    continue;
+  } else {
+    frogged = frogged + character;
   }
-  frogged = frogged + character;
 }
-
 alert(frogged);

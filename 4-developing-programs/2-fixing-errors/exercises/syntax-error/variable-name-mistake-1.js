@@ -2,7 +2,6 @@
 
 'use strict';
 
-
 /*
   environment:
 
@@ -18,7 +17,4 @@
   the fix(es):
 */
 
-
-const 3 = 'three';
-
-
+const three = 3;

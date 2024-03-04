@@ -26,3 +26,4 @@ if (hasNoDuplicates.length === mayHaveDuplicates.length) {
 } else {
   alert('too bad, try again');
 }
+alert(finalMessage);

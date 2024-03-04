@@ -17,6 +17,5 @@
   the fix(es):
 */
 
+const tomatoes = 'fresh';
 console.log(tomatoes);
-
-let tomatoes = 'fresh';

@@ -19,4 +19,8 @@
 
 const userInput = null;
 
-console.log(userInput.length);
+if (userInput !== null && userInput !== undefined) {
+  console.log(userInput.length);
+} else {
+  console.log('userInput is null or undefined');
+}

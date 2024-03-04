@@ -42,7 +42,7 @@ const vowels = 'aeiouAEIOU';
 let hasAVowel = true;
 for (const char of characters) {
   if (vowels.includes(char)) {
-    hasAVowel = false;
+    hasAVowel = true;
     break;
   }
 }
